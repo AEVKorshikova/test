@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function sayHallo(){
+            let testDiv = document.getElementById("test-div");
+           
+
+            let user1 = {
+                "name":"Mustermann",
+                "id":123,
+                "firstname":"Peter",
+                "age":42
+            };
+            let user2 = {
+                "name":"Mueller",
+                "id":321,
+                "firstname":"Monika",
+                "age":22
+            };
+            let users = [];
+            users.push(user1);
+            users.push(user2);
+            
+            testDiv.innerHTML = "<ul>" + "<li>"+user1.name+"</li>" +
+                "<li>"+user2.name+"</li>" +"</ul>" ; 
+        }
+
+       
+
+    </script>
+</head>
+<body>
+    <div id="test-div">
+
+    </div>
+    <button onclick="sayHallo()">SayHallo</button>
+
+</body>
+</html>
